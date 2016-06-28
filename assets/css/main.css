@@ -31,13 +31,22 @@ html {
   font-weight: 600;
   src: local("AvenirNextLTPro-Bold"), url("1-tools/avenir/AvenirNextLTPro-Bold.woff") format("woff"); }
 .about .about-lockup, .topic .topic-lockup, .get_started .get_started_lockup, footer {
-  max-width: 380px;
+  max-width: 340px;
   margin-left: auto;
   margin-right: auto; }
   .about .about-lockup::after, .topic .topic-lockup::after, .get_started .get_started_lockup::after, footer::after {
     clear: both;
     content: "";
     display: block; }
+  @media screen and (min-width: 420px) {
+    .about .about-lockup, .topic .topic-lockup, .get_started .get_started_lockup, footer {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto; }
+      .about .about-lockup::after, .topic .topic-lockup::after, .get_started .get_started_lockup::after, footer::after {
+        clear: both;
+        content: "";
+        display: block; } }
   @media screen and (min-width: 580px) {
     .about .about-lockup, .topic .topic-lockup, .get_started .get_started_lockup, footer {
       max-width: 530px;
@@ -167,6 +176,7 @@ header {
             font-size: 60px; } }
     header .hero .kicker {
       text-align: center;
+      padding: 0 20px;
       font-size: 40px;
       font-weight: 300;
       color: white;
