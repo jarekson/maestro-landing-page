@@ -31,7 +31,7 @@ html {
   font-weight: 600;
   src: local("AvenirNextLTPro-Bold"), url("1-tools/avenir/AvenirNextLTPro-Bold.woff") format("woff"); }
 .about .about-lockup, .topic .topic-lockup, .get_started .get_started_lockup, footer {
-  max-width: 340px;
+  max-width: 310px;
   margin-left: auto;
   margin-right: auto; }
   .about .about-lockup::after, .topic .topic-lockup::after, .get_started .get_started_lockup::after, footer::after {
@@ -90,7 +90,7 @@ html {
 
 .guide-lockup h2, .about .about-lockup h2, .topic .topic-lockup h2, .get_started .get_started_lockup h2 {
   color: #2d2926;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2em;
@@ -140,8 +140,12 @@ header {
     padding: 30px 0; }
     header .header-lockup .logo {
       margin: 0 auto;
-      height: 50px;
-      width: 325px; }
+      height: 35px;
+      width: 228px; }
+      @media screen and (min-width: 420px) {
+        header .header-lockup .logo {
+          height: 50px;
+          width: 325px; } }
       @media screen and (min-width: 1100px) {
         header .header-lockup .logo {
           height: 60px;
@@ -156,7 +160,15 @@ header {
     overflow: auto; }
     @media screen and (min-width: 580px) {
       header .hero {
-        padding-bottom: 80px;
+        padding-bottom: 150px;
+        vertical-align: bottom; } }
+    @media screen and (min-width: 700px) {
+      header .hero {
+        padding-bottom: 100px;
+        vertical-align: bottom; } }
+    @media screen and (min-width: 1100px) {
+      header .hero {
+        padding-bottom: 120px;
         vertical-align: bottom; } }
     header .hero h1 {
       text-align: center;
@@ -169,21 +181,28 @@ header {
         padding: 0.05em 0.5em;
         border: white solid 2px;
         color: white;
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 600; }
+        @media screen and (min-width: 420px) {
+          header .hero h1 a {
+            font-size: 40px;
+            padding-top: 10px; } }
         @media screen and (min-width: 1100px) {
           header .hero h1 a {
             font-size: 60px; } }
     header .hero .kicker {
       text-align: center;
       padding: 0 20px;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 300;
       color: white;
       letter-spacing: -0.05em; }
-      @media screen and (min-width: 580px) {
+      @media screen and (min-width: 420px) {
         header .hero .kicker {
           font-size: 40px; } }
+      @media screen and (min-width: 580px) {
+        header .hero .kicker {
+          font-size: 50px; } }
       @media screen and (min-width: 700px) {
         header .hero .kicker {
           font-size: 40px; } }
@@ -282,9 +301,12 @@ header {
   .topic .topic-lockup .hero {
     color: inherit; }
   .topic .topic-lockup h2 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     text-transform: none; }
+    @media screen and (min-width: 420px) {
+      .topic .topic-lockup h2 {
+        font-size: 26px; } }
     @media screen and (min-width: 580px) {
       .topic .topic-lockup h2 {
         font-size: 35px; } }
@@ -354,7 +376,7 @@ footer {
       margin-right: 0; }
     footer .lockup .logo-wrap {
       margin-bottom: 60px; }
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 960px) {
         footer .lockup .logo-wrap {
           float: left;
           display: block;
@@ -367,7 +389,7 @@ footer {
         margin: 0 auto;
         height: 50px;
         width: 203px; }
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 960px) {
           footer .lockup .logo-wrap .logo {
             margin: 0; } }
       footer .lockup .logo-wrap h5 {
@@ -379,7 +401,7 @@ footer {
         margin: 0; }
     footer .lockup nav {
       margin-bottom: 60px; }
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 960px) {
         footer .lockup nav {
           float: left;
           display: block;
